@@ -1,10 +1,9 @@
 pragma solidity ^0.4.6;
 
 /** 
-  __OriginalAuthor__ Rob Hitchens (https://ethereum.stackexchange.com/questions/13167/are-there-well-solved-and-simple-storage-patterns-for-solidity)
-
-    * Modified
- */
+* Original Author: Rob Hitchens 
+* Modified
+*/
 contract StructMap {
 
   struct Entity {
