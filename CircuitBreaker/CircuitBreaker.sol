@@ -11,11 +11,11 @@ contract CircuitBreaker is Ownable {
     stopped = false;
   }
   function toggleActive() only_owner public {
+    stopped = !stopped;
   }
   
   modifier stop_if_emergency() {
-    
-    _;
+    if (!stopped){_;}
   }
   modifier emergency_only() {
     if (stopped) {_;}
